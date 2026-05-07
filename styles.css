@@ -1,8 +1,21 @@
 body{
-    background-image: url(bg.png);
+    background-image: url(bg.jpg);
     color: lch(24.04% 57.77 37.59);
+    animation: fadeInAnimation ease 3s; 
+	            animation-iteration-count: 1;
+	            animation-fill-mode: forwards;
+	    } 
+	    @keyframes fadeInAnimation{
+	            0% {
+	                opacity: 0;
+	            }
 
-}
+	            100% {
+	                opacity: 1;
+                }
+            }
+
+
 
 #navbar {
             background-color:lch(17.72% 47.09 34.88);
@@ -28,11 +41,11 @@ body{
 #okay{
     text-align: center;
     background-color:#ffffff;
-    margin-left:250px;
-     border: medium solid #4e0a0a;
+     border:  thin dashed #4e0a0a;
      border-radius: 20px;
      width: 1000px;
     align-items: center
+    
 }
 
 #br{
@@ -52,6 +65,7 @@ body{
     box-shadow: 6px 6px 6px 0px rgba(78,10,10,0.09);
 -webkit-box-shadow: 6px 6px 6px 0px rgba(78,10,10,0.09);
 -moz-box-shadow: 6px 6px 6px 0px rgba(78,10,10,0.09);
+    
 
     transition: 0.3s ease;
 }
@@ -71,5 +85,19 @@ body{
 }
 
 #mip{
-    margin-left: 35px;
+    margin-left: 150px;
+}
+
+#outer{
+    text-align: center;
+    background-color:#d57e7e;
+    margin-left:230px;
+     border: medium solid #4e0a0a;
+     border-radius: 20px;
+     width: 1030px;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 6px 6px 6px 0px rgba(78,10,10,0.09);
+-webkit-box-shadow: 6px 6px 6px 0px rgba(78,10,10,0.09);
+-moz-box-shadow: 6px 6px 6px 0px rgba(78,10,10,0.09);
 }
